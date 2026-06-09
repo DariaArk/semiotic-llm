@@ -42,7 +42,7 @@ docs/                  architecture derivation, worked example, roadmap
  
 Scope
 
-This is a reference implementation, not a trained model or a benchmark result. It establishes that the design is coherent and trainable, with every number reproducible and every gradient verified. What it leaves open — bootstrapping the opposition supervision, giving each scale its own head, deriving the floor δ_min rather than tuning it, and porting to an autograd framework for training at scale — is listed with falsifiable predictions in docs/roadmap.md.
+This is a reference implementation, not a trained model or a benchmark result. It establishes that the design is coherent and trainable, with every number reproducible and every gradient verified. What it leaves open — bootstrapping the opposition supervision, giving each scale its own head, deriving the floor δ_min rather than tuning it, and porting to an autograd framework for training at scale — is listed with falsifiable predictions in docs/roadmap.md. Coded together with Claude.
 
 License
 
