@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sign-prediction"
+version = "0.1.0"
+description = "Predicting the next sign in a differentially-structured, multi-scale embedding space. A reference implementation with hand-derived, gradient-checked losses."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Daria Arkhipova" }]
+keywords = ["embeddings", "language-models", "contrastive-learning", "representation-learning", "interpretability"]
+dependencies = ["numpy>=1.21"]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/DariaArk/semiotic-llm"
+Issues = "https://github.com/DariaArk/semiotic-llm/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
